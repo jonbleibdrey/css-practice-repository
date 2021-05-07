@@ -3,6 +3,8 @@ import React, { useState } from "react";
 const Form = () => {
   const [dogs, setDogs] = useState([]);
   const [input, setInput] = useState("");
+  const [edit, setEdit] = useState(false)
+  const [update, setUpdate] = useState(dogs)
 
   const handleChange = (e) => {
     setInput(e.target.value);
@@ -19,8 +21,36 @@ const Form = () => {
     setDogs(dogs.filter(e => e.id !== id));
   };
 
+  const inputBaby =(e)=> {
+      setUpdate(e.target.value)
+  }
+
+  const updateHandler = (e) => { 
+    e.preventDefault();
+    setDogs(
+      dogs.map((item) => {
+        if (item.id === dogs[0]) {
+          return {
+            ...item,
+            dogsName: update,
+          };
+        }
+        return item;
+      })
+    );
+    setEdit(false);
+  };
+
+
+
   return (
-    <div className="form__container">
+      <>
+      {edit ? (
+          <form onSubmit={updateHandler}>
+              <input type="text" onChange={inputBaby} value={update}/>
+              <button type="submit">edit</button>
+          </form>
+      ) : (<div className="form__container">
       <div>
         <form onSubmit={handleSubmit}>
           <input type="text" onChange={handleChange} value={input} />
@@ -32,12 +62,15 @@ const Form = () => {
               <li key={e.id}>
                 {e.dogsName}
                 <button onClick={()=> handleDelete(e.id)}>delete</button>
+                <button onClick={() => setEdit(true)}>edit</button>
               </li>
         ))}
         </ul>
       </div>
       </div>
-    </div>
+    </div>)}
+    
+    </>
   );
 };
 
