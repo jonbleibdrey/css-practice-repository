@@ -1,24 +1,67 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+    <div className="app__container">
+      <div className="app__box1">
+        <h3> box one</h3>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+          repellendus sapiente aperiam veritatis eveniet totam quo officiis ex
+          laudantium deserunt unde voluptas consectetur iste, pariatur
+          voluptate. Numquam voluptatem accusantium consequatur.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      </div>
+      <div className="app__box2">
+        <h3> box two</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+          repellendus sapiente aperiam veritatis eveniet totam quo officiis ex
+          laudantium deserunt unde voluptas consectetur iste, pariatur
+          voluptate. Numquam voluptatem accusantium consequatur.
+        </p>
+      </div>
+      <div className="app__box3">
+        <h3> box three</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+          repellendus sapiente aperiam veritatis eveniet totam quo officiis ex
+          laudantium deserunt unde voluptas consectetur iste, pariatur
+          voluptate. Numquam voluptatem accusantium consequatur.
+        </p>
+      </div>
     </div>
+    <div className="app__container2">
+      <div className="container2__box">
+        <h3> box four</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+          repellendus sapiente aperiam veritatis eveniet totam quo officiis ex
+          laudantium deserunt unde voluptas consectetur iste, pariatur
+          voluptate. Numquam voluptatem accusantium consequatur.
+        </p>
+      </div>
+      <div className="container2__box">
+        <h3> box five</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+          repellendus sapiente aperiam veritatis eveniet totam quo officiis ex
+          laudantium deserunt unde voluptas consectetur iste, pariatur
+          voluptate. Numquam voluptatem accusantium consequatur.
+        </p>
+      </div>
+      <div className="container2__box">
+        <h3> box six</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+          repellendus sapiente aperiam veritatis eveniet totam quo officiis ex
+          laudantium deserunt unde voluptas consectetur iste, pariatur
+          voluptate. Numquam voluptatem accusantium consequatur.
+        </p>
+      </div>
+    </div>
+    </>
   );
 }
 
