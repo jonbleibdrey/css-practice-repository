@@ -1,5 +1,5 @@
 import "./App.css";
-
+import Form from "./Form"
 function App() {
   return (
     <>
@@ -90,6 +90,7 @@ function App() {
         </p>
       </div>
     </div>
+    <Form/>
     </>
   );
 }
