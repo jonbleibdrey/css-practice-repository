@@ -1,9 +1,23 @@
+
+
 .app__container {
   display: flex;
   /* align-items: center; */
   /* flex-direction: column; */
 }
-.app__container div {
+.app__container2 {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+.app__container3 {
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+.app__container div, .app__container2 div, .app__container3 div{
   border: 1px #ccc solid;
   padding: 20px;
   margin: 10px;
@@ -12,7 +26,7 @@
 .app__box1 {
   /* flex: 2;
   order: 2; */
-  
+
 }
 .app__box2 {
   /* flex: 1;
@@ -21,4 +35,13 @@
 .app__box3 {
   /* flex: 1;
   order: 1; */
+}
+
+.container2__box{
+  /* width: 30%; */
+  flex-basis: 27%;
+}
+.container3__box{
+  /* width: 30%; */
+  flex-basis: 15%;
 }
